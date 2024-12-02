@@ -107,6 +107,7 @@ _DEPS = [
     "pytest==8.0.2",
     "pytest-cov",
     "wandb",
+    "jsonschema>=22.2.0"
 ]
 
 # lookup table with items like:
