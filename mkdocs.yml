@@ -26,9 +26,10 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-    - Deepdoctection: index.md
-    - About: why.md
-    - Install: install.md
+  - English:
+    - Deepdoctection: en/index.md
+    - About: en/why.md
+    - Install: en/install.md
     - Tutorials:
         - Introductory tutorials:
             - Get started: ./tutorials/get_started_notebook.md
@@ -75,6 +76,15 @@ nav:
         - deepdoctection.pipe: ./modules/deepdoctection.pipe.md
         - deepdoctection.train: ./modules/deepdoctection.train.md
         - deepdoctection.utils: ./modules/deepdoctection.utils.md
+  - 中文:
+    - 主頁: zh/index.md
+    - 關於: zh/about.md
+    - 安裝: zh/install.md
+    - 教學:
+        - Introductory tutorials:
+            - Get started: ./tutorials/get_started_notebook.md
+    - API介面:
+        - deepdoctection.analyzer: ./modules/deepdoctection.analyzer.md
 
 
 plugins:
@@ -87,7 +97,28 @@ plugins:
               line_length: 120
               docstring_style: sphinx
               merge_init_into_class: True
+    - i18n:
+        default_language: en
+        languages:
+          - locale: en
+            default: true
+            name: English
+            build: true
+          - locale: zh
+            name: 中文
+            build: true
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
 
 # to watch lib files in mkdocs server. Uncomment, if update docs locally
+
 watch:
     - deepdoctection
+
+
