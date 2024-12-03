@@ -203,7 +203,7 @@ def draw_boxes(
     category_names_list: Optional[list[Optional[str]]] = None,
     color: Optional[BGR] = None,
     font_scale: float = 1.0,
-    rectangle_thickness: int = 4,
+    rectangle_thickness: int = 1,
     box_color_by_category: bool = True,
     show_palette: bool = True,
 ) -> PixelValues:
