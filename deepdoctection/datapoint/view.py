@@ -1001,7 +1001,7 @@ class Page(Image):
                         boxes=boxes,
                         category_names_list=category_names_list,
                         font_scale=1.0,
-                        rectangle_thickness=4,
+                        rectangle_thickness=1, # original value is 4
                     )
                 else:
                     img = draw_boxes(
