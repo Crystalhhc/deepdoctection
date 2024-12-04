@@ -1000,7 +1000,7 @@ class Page(Image):
                         np_image=img,
                         boxes=boxes,
                         category_names_list=category_names_list,
-                        font_scale=1.0,
+                        font_scale=0.4, #original 1.0,
                         rectangle_thickness=1, # original value is 4
                     )
                 else:

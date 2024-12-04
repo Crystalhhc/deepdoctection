@@ -111,6 +111,19 @@ def _proto_process(
 
 @curry
 def _to_image(dp: Union[str, Mapping[str, Union[str, bytes]]], dpi: Optional[int] = None) -> Optional[Image]:
+    """
+    Convert input data to an Image object.
+
+    This function takes either a string path or a mapping containing image data
+    and converts it to an Image object. It can optionally set the DPI (dots per inch)
+    of the resulting image.
+
+    :param dp: The input data to be converted. Can be either a string path to an image file
+               or a mapping containing image data (e.g., file path or bytes).
+    :param dpi: Optional. The desired DPI (dots per inch) for the resulting image.
+                If None, the default DPI will be used.
+    :return: An Image object if conversion is successful, None otherwise.
+    """
     return to_image(dp, dpi)
 
 
