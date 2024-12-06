@@ -30,7 +30,7 @@ cfg.DEVICE = None
 cfg.USE_ROTATOR = False
 cfg.USE_LAYOUT = True
 cfg.USE_TABLE_SEGMENTATION = True
-
+"""
 cfg.TF.LAYOUT.WEIGHTS = "layout/model-800000_inf_only.data-00000-of-00001"
 cfg.TF.LAYOUT.FILTER = None
 
@@ -39,7 +39,7 @@ cfg.TF.CELL.FILTER = None
 
 cfg.TF.ITEM.WEIGHTS = "item/model-1620000_inf_only.data-00000-of-00001"
 cfg.TF.ITEM.FILTER = None
-"""
+
 cfg.PT.LAYOUT.WEIGHTS = "layout/d2_model_0829999_layout_inf_only.pt"
 cfg.PT.LAYOUT.WEIGHTS_TS = "layout/d2_model_0829999_layout_inf_only.ts"
 """
@@ -56,7 +56,7 @@ cfg.PT.ITEM.WEIGHTS_TS = "item/d2_model_1639999_item_inf_only.ts"
 """
 cfg.PT.ITEM.WEIGHTS = "microsoft/table-transformer-structure-recognition/pytorch_model.bin"
 #cfg.PT.ITEM.WEIGHTS_TS = "item/d2_model_1639999_item_inf_only.ts"
-cfg.PT.ITEM.FILTER = None
+cfg.PT.ITEM.FILTER = ["table"]
 cfg.PT.ITEM.PAD.TOP = 60
 cfg.PT.ITEM.PAD.RIGHT = 60
 cfg.PT.ITEM.PAD.BOTTOM = 60
