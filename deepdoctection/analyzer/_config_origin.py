@@ -39,33 +39,27 @@ cfg.TF.CELL.FILTER = None
 
 cfg.TF.ITEM.WEIGHTS = "item/model-1620000_inf_only.data-00000-of-00001"
 cfg.TF.ITEM.FILTER = None
-"""
+
 cfg.PT.LAYOUT.WEIGHTS = "layout/d2_model_0829999_layout_inf_only.pt"
 cfg.PT.LAYOUT.WEIGHTS_TS = "layout/d2_model_0829999_layout_inf_only.ts"
-"""
-cfg.PT.LAYOUT.WEIGHTS = "microsoft/table-transformer-detection/pytorch_model.bin"
-#cfg.PT.LAYOUT.WEIGHTS_TS = "layout/d2_model_0829999_layout_inf_only.ts"
 cfg.PT.LAYOUT.FILTER = None
 cfg.PT.LAYOUT.PAD.TOP = 60
 cfg.PT.LAYOUT.PAD.RIGHT = 60
 cfg.PT.LAYOUT.PAD.BOTTOM = 60
 cfg.PT.LAYOUT.PAD.LEFT = 60
-"""
+
 cfg.PT.ITEM.WEIGHTS = "item/d2_model_1639999_item_inf_only.pt"
 cfg.PT.ITEM.WEIGHTS_TS = "item/d2_model_1639999_item_inf_only.ts"
-"""
-cfg.PT.ITEM.WEIGHTS = "microsoft/table-transformer-structure-recognition/pytorch_model.bin"
-#cfg.PT.ITEM.WEIGHTS_TS = "item/d2_model_1639999_item_inf_only.ts"
 cfg.PT.ITEM.FILTER = None
 cfg.PT.ITEM.PAD.TOP = 60
 cfg.PT.ITEM.PAD.RIGHT = 60
 cfg.PT.ITEM.PAD.BOTTOM = 60
 cfg.PT.ITEM.PAD.LEFT = 60
-"""
+
 cfg.PT.CELL.WEIGHTS = "cell/d2_model_1849999_cell_inf_only.pt"
 cfg.PT.CELL.WEIGHTS_TS = "cell/d2_model_1849999_cell_inf_only.ts"
 cfg.PT.CELL.FILTER = None
-"""
+
 cfg.USE_LAYOUT_NMS = False
 cfg.LAYOUT_NMS_PAIRS.COMBINATIONS = None
 cfg.LAYOUT_NMS_PAIRS.THRESHOLDS = None
