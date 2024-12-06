@@ -1,16 +1,7 @@
 USE_ROTATOR: False
 USE_LAYOUT: True
 USE_TABLE_SEGMENTATION: True
-TF:
-  LAYOUT:
-    WEIGHTS: layout/model-800000_inf_only.data-00000-of-00001
-    FILTER:
-  CELL:
-    WEIGHTS: cell/model-1800000_inf_only.data-00000-of-00001
-    FILTER:
-  ITEM:
-    WEIGHTS: item/model-1620000_inf_only.data-00000-of-00001
-    FILTER:
+
 PT:
   LAYOUT:
     WEIGHTS: microsoft/table-transformer-detection/pytorch_model.bin
