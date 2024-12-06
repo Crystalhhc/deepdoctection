@@ -127,7 +127,7 @@ def get_dd_analyzer(
         raise DependencyError("At least one of the env variables DD_USE_TF or DD_USE_TORCH must be set.")
     dd_one_config_path = maybe_copy_config_to_cache(
         get_package_path(), get_configs_dir_path() / "dd", _DD_ONE, reset_config_file
-    )
+    ) #"/root/.cache/deepdoctection/configs/dd/conf_dd_one.yaml"
     maybe_copy_config_to_cache(get_package_path(), get_configs_dir_path() / "dd", _TESSERACT)
 
     # Set up of the configuration and logging

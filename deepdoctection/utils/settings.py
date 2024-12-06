@@ -422,21 +422,21 @@ def get_type(obj_type: Union[str, ObjectTypes]) -> ObjectTypes:
 
 # package path
 file_path = Path(os.path.split(__file__)[0])
-PATH = file_path.parent.parent
+PATH = file_path.parent.parent # Root directory
 
 # model cache directory
 if os.environ.get("DEEPDOCTECTION_CACHE"):
     dd_cache_home = Path(os.environ["DEEPDOCTECTION_CACHE"])
 else:
     dd_cache_home = Path(os.getenv("XDG_CACHE_HOME", Path.home() / ".cache")) / "deepdoctection"
-
-MODEL_DIR = dd_cache_home / "weights"
+# dd_cachr_home = "/root/.cache/deepdoctection"
+MODEL_DIR = dd_cache_home / "weights" #"/root/.cache/deepdoctection/weights"
 
 # configs cache directory
-CONFIGS = dd_cache_home / "configs"
+CONFIGS = dd_cache_home / "configs" # "/root/.cache/deepdoctection/configs"
 
 # dataset cache directory
-DATASET_DIR = dd_cache_home / "datasets"
+DATASET_DIR = dd_cache_home / "datasets" #"/root/.cache/deepdoctection/datasets"
 
 FILE_PATH = os.path.split(__file__)[0]
 TPATH = os.path.dirname(os.path.dirname(FILE_PATH))
