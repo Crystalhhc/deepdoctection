@@ -13,8 +13,8 @@ TF:
     FILTER:
 PT:
   LAYOUT:
-    WEIGHTS: microsoft/table-transformer-detection/pytorch_model.bin
-    WEIGHTS_TS: 
+    WEIGHTS: layout/d2_model_0829999_layout_inf_only.pt
+    WEIGHTS_TS: layout/d2_model_0829999_layout_inf_only.ts
     FILTER:
     PAD:
       TOP: 60
@@ -22,17 +22,17 @@ PT:
       BOTTOM: 60
       LEFT: 60
   ITEM:
-    WEIGHTS: microsoft/table-transformer-structure-recognition/pytorch_model.bin
-    WEIGHTS_TS: 
-    FILTER: table
+    WEIGHTS: item/d2_model_1639999_item_inf_only.pt
+    WEIGHTS_TS: item/d2_model_1639999_item_inf_only.ts
+    FILTER:
     PAD:
       TOP: 60
       RIGHT: 60
       BOTTOM: 60
       LEFT: 60
   CELL:
-    WEIGHTS: 
-    WEIGHTS_TS: 
+    WEIGHTS: cell/d2_model_1849999_cell_inf_only.pt
+    WEIGHTS_TS: cell/d2_model_1849999_cell_inf_only.ts
     FILTER:
 LAYOUT_NMS_PAIRS:
   COMBINATIONS:

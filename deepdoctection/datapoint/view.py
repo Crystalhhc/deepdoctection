@@ -159,10 +159,10 @@ class ImageAnnotationBaseView(ImageAnnotation):
         Identical to its base class method for having correct return types. If the base class changes, please
         change this method as well.
         """
-        image_ann = ann_from_dict(cls, **kwargs)
+        image_ann = ann_from_dict(cls, **kwargs) # get the class annotations including sub categories
         if box_kwargs := kwargs.get("bounding_box"):
-            image_ann.bounding_box = BoundingBox.from_dict(**box_kwargs)
-        return image_ann
+            image_ann.bounding_box = BoundingBox.from_dict(**box_kwargs) # get bounding_boxes
+        return image_ann # return all classes and bounding_boxes
 
 
 class Word(ImageAnnotationBaseView):
