@@ -437,7 +437,7 @@ class ModelCatalog:
             hf_config_file=["config.json"],
             dl_library="PT",
         ),
-        "microsoft/table-transformer-detection/pytorch_model.bin": ModelProfile(
+        "microsoft/table-transformer-detection": ModelProfile(
             name="microsoft/table-transformer-detection/pytorch_model.bin",
             description="Table Transformer (DETR) model trained on PubTables1M. It was introduced in the paper "
             "PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents by Smock et "
@@ -453,8 +453,8 @@ class ModelCatalog:
             dl_library="PT",
             model_wrapper="HFDetrDerivedDetector",
         ),
-        "microsoft/table-transformer-structure-recognition/pytorch_model.bin": ModelProfile(
-            name="microsoft/table-transformer-structure-recognition/pytorch_model.bin",
+        "microsoft/table-transformer-structure-recognition": ModelProfile(
+            name="microsoft/table-transformer-structure-recognition",
             description="Table Transformer (DETR) model trained on PubTables1M. It was introduced in the paper "
             "PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents by Smock et "
             "al. This model is devoted to table structure recognition and assumes to receive a cropped"
