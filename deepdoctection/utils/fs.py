@@ -268,7 +268,7 @@ def get_weights_dir_path() -> Path:
     """
     :return: full base path to the model dir
     """
-    return MODEL_DIR  #MODEL_DIR = dd_cache_home / "weights"
+    return MODEL_DIR  #MODEL_DIR = "/root/.cache/deepdoctection/weights"
 
 
 def get_configs_dir_path() -> Path:

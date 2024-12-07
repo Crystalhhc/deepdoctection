@@ -437,8 +437,8 @@ class ModelCatalog:
             hf_config_file=["config.json"],
             dl_library="PT",
         ),
-        "microsoft/table-transformer-detection": ModelProfile(
-            name="microsoft/table-transformer-detection",
+        "microsoft/table-transformer-detection/pytorch_model.bin": ModelProfile(
+            name="microsoft/table-transformer-detection/pytorch_model.bin",
             description="Table Transformer (DETR) model trained on PubTables1M. It was introduced in the paper "
             "PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents by Smock et "
             "al. This model is devoted to table detection",
@@ -453,8 +453,8 @@ class ModelCatalog:
             dl_library="PT",
             model_wrapper="HFDetrDerivedDetector",
         ),
-        "microsoft/table-transformer-structure-recognition": ModelProfile(
-            name="microsoft/table-transformer-structure-recognition",
+        "microsoft/table-transformer-structure-recognition/pytorch_model.bin": ModelProfile(
+            name="microsoft/table-transformer-structure-recognition/pytorch_model.bin",
             description="Table Transformer (DETR) model trained on PubTables1M. It was introduced in the paper "
             "PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents by Smock et "
             "al. This model is devoted to table structure recognition and assumes to receive a cropped"
@@ -925,7 +925,7 @@ class ModelCatalog:
             )
             profile = ModelProfile(name="", description="", size=[])
         if profile.name:
-            return os.path.join(get_weights_dir_path(), profile.name)
+            return os.path.join(get_weights_dir_path(), profile.name) #/root/.cache/deepdoctection/weights
         log_once(
             f"Model {name} is not registered. Please make sure the weights are available in the weights "
             f"cache directory or the full path you provide is correct"
