@@ -438,7 +438,7 @@ class ModelCatalog:
             dl_library="PT",
         ),
         "microsoft/table-transformer-detection": ModelProfile(
-            name="microsoft/table-transformer-detection/pytorch_model.bin",
+            name="microsoft/table-transformer-detection",
             description="Table Transformer (DETR) model trained on PubTables1M. It was introduced in the paper "
             "PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents by Smock et "
             "al. This model is devoted to table detection",
