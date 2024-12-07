@@ -43,7 +43,7 @@ cfg.TF.ITEM.FILTER = None
 cfg.PT.LAYOUT.WEIGHTS = "layout/d2_model_0829999_layout_inf_only.pt"
 cfg.PT.LAYOUT.WEIGHTS_TS = "layout/d2_model_0829999_layout_inf_only.ts"
 """
-cfg.PT.LAYOUT.WEIGHTS = "microsoft/table-transformer-detection"
+cfg.PT.LAYOUT.WEIGHTS = "microsoft/table-transformer-detection/pytorch_model.bin"
 #cfg.PT.LAYOUT.WEIGHTS_TS = "layout/d2_model_0829999_layout_inf_only.ts"
 cfg.PT.LAYOUT.FILTER = None
 cfg.PT.LAYOUT.PAD.TOP = 60
@@ -54,7 +54,7 @@ cfg.PT.LAYOUT.PAD.LEFT = 60
 cfg.PT.ITEM.WEIGHTS = "item/d2_model_1639999_item_inf_only.pt"
 cfg.PT.ITEM.WEIGHTS_TS = "item/d2_model_1639999_item_inf_only.ts"
 """
-cfg.PT.ITEM.WEIGHTS = "microsoft/table-transformer-structure-recognition"
+cfg.PT.ITEM.WEIGHTS = "microsoft/table-transformer-structure-recognition/pytorch_model.bin"
 #cfg.PT.ITEM.WEIGHTS_TS = "item/d2_model_1639999_item_inf_only.ts"
 cfg.PT.ITEM.FILTER = ["table"]
 cfg.PT.ITEM.PAD.TOP = 60
